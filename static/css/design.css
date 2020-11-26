@@ -1,0 +1,23 @@
+body{
+background-color:#5bc6c9;
+color:#cae327;
+}
+h1{
+border-bottom: 5px solid red;
+width:65%;
+}
+.container-register{
+width:50%;
+height: 30px;
+padding-left:50%;
+}
+form{
+left-margin:50px
+padding-left:50%;
+}
+
+.classroom{
+margin-left:10%;
+font-weight:bold;
+font-size:20px;
+}

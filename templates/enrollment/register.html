@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%extends 'enrollment/base.html'%}
+{%block body_block%}
+    <div class="container-register" align="center">
+        <form class="register" method="post" action="{% url 'register' %}">
+            {%csrf_token%}
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+
+            <input type="hidden" name="detail_id" value={{detail_id}}>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email"><br>
+
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" placeholder="Enter password"><br>
+            <br>
+
+            <input type="submit" class="btn btn-primary" value="Register">
+        </form>
+    </div>
+{%endblock%}

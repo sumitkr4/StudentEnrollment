@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{%extends 'enrollment/base.html'%}
+{%block body_block%}
+    <form action="{% url 'register'%}">
+        {% csrf_token %}
+            <h1>{{ detail.title }}</h1>
+            <p>{{detail.descriptions}}</p>
+            <input type="hidden" name="detail_id" value={{detail.id}}>
+        <input type="submit" class="btn btn-primary" name="submit" value="Register">
+    </form>
+{%endblock%}

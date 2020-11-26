@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{%extends 'enrollment/base.html'%}
+{%block body_block%}
+    <h2>Classroom We Provide</h2>
+    {% for class in classes %}
+      <ul class="classroom">
+         <li><a href="{% url 'classroom' pk=class.id %}">{{class.title}}</a></li>
+
+      </ul>
+    {%endfor%}
+
+{%endblock%}
